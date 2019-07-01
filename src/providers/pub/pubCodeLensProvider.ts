@@ -63,7 +63,7 @@ export class PubCodeLensProvider extends AbstractCodeLensProvider {
       .then((info: any) => {
         return CommandFactory.createVersionCommand(
           codeLens.package.version,
-          info.latestStableVersion,
+          info.latest.version,
           codeLens
         );
       })

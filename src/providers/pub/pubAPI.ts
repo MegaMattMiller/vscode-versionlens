@@ -9,7 +9,7 @@ export function pubGetPackageInfo(packageName) {
     pubRequest
       .httpGet(packageName)
       .then(info => {
-        if (!info || !info.latestStableVersion) {
+        if (!info || !info.latest.version) {
           reject({
             status: 404,
             responseText: `Invalid object returned from server for '${packageName}'`
