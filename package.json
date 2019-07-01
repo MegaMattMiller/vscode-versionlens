@@ -264,6 +264,11 @@
           ],
           "description": "Defines which properties in pubspec.yaml should be parsed by this extension"
         },
+        "versionlens.pub.serverUrl": {
+          "type": "string",
+          "default": "pub.dev",
+          "description": "Defines the default server for pub packages."
+        },
         "versionlens.dotnet.dependencyProperties": {
           "type": "array",
           "items": {
