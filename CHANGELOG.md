@@ -1,3 +1,7 @@
+# 0.25.0
+
+  - Pub: Support for custom pub servers.
+
 # 0.24.0
 
   - Dart+Flutter support added (thanks to https://github.com/Gorniv)
