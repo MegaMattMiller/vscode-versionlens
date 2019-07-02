@@ -23,7 +23,9 @@ export const PubCodeLensProviderTests = {
     // default api mocks
     PubAPIModule.pubGetPackageInfo = name => {
       return Promise.resolve({
-        latestStableVersion: "3.2.1"
+        latest: {
+          version: "3.2.1"
+        }
       });
     };
   },
@@ -187,7 +189,9 @@ export const PubCodeLensProviderTests = {
 
       PubAPIModule.pubGetPackageInfo = name => {
         return Promise.resolve({
-          latestStableVersion: "3.2.1"
+          latest: {
+            version: "3.2.1"
+          }
         });
       };
 
